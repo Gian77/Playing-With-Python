@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-##This script simply split a fastq file according headers IDs
+##This script simply split a fastq file according header's IDs
 
 imputfile = open("seqs.fastq", "r")
 all_lines = imputfile.readlines()
