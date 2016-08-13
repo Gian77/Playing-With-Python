@@ -1,1 +1,1 @@
-# Few useful Python codes for playing with .fasta and fastq files.
+# Few useful Python codes for playing with .fasta and .fastq read files
