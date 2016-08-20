@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 #usage $: python split_fastq_buIDs.py ID1 ID2 ID3 ...
-#remember to check sample heade in the fastq file and make change at line 20
+#remember to check sample header in the fastq file and make requred changes at line 20
 
 import sys
 
