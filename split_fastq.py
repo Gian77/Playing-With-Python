@@ -1,7 +1,13 @@
+# code written by Gian (Nico) Benucci - gian.benucci@gmail.com
+# This script splits a fastq file according header's IDs
+# usage: python split_fastq_by_IDs.py file.fastq
+
 #!/usr/bin/python
 
-##This script simply split a fastq file according header's IDs
+import sys
+reads = sys.argv[1]
 
+imputfile = open("reads", "r")
 imputfile = open("seqs.fastq", "r")
 all_lines = imputfile.readlines()
 imputfile.close()
