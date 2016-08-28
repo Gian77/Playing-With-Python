@@ -8,7 +8,6 @@ import sys
 reads = sys.argv[1]
 
 imputfile = open("reads", "r")
-imputfile = open("seqs.fastq", "r")
 all_lines = imputfile.readlines()
 imputfile.close()
 
