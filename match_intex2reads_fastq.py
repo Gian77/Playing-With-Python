@@ -7,7 +7,7 @@ reads = sys.argv[1]
 index = sys.argv[2]
 all_readIDs = set()
 
-# Re-written the code below to only ever read the first row:
+# The code below is written to only ever read the first row:
 with open(reads, "r") as read_file:
 	while True:
 		try:
@@ -18,14 +18,14 @@ with open(reads, "r") as read_file:
 			next(read_file) # save the data anywhere. 
 		except StopIteration:
 			break
-# This hasn't changed:
+# This is to test the content of the list
 if not all_readIDs: print "List is Empty"
 else:
 	for idx,item in enumerate(all_readIDs):
 		print item
 		if idx == 10: break
 
-# Rewritten to not skip any rows and write all 4 rows to a file if the ID line in the ID set:
+# The code below will not skip any rows and write all 4 rows to a file if the ID line in the ID set:
 with open(index, "r") as index_file, open("filtered_index.fastq", "w") as filtered_file:
 	while True:
 		try:
