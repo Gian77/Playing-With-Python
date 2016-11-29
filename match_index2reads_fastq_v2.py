@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+# This version is useful when your fastq reads have 
+# 1:N:0: or 2:N:0: or 3:N:0: on the 6 last digits 
+# of the header and get rid of it while matching
+
 import sys
 
 reads = sys.argv[1]
