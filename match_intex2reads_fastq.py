@@ -3,8 +3,10 @@
 # usage: pyhton match_index2reads_fastq.py reads.fastq index.fastq
 
 import sys
+
 reads = sys.argv[1]
 index = sys.argv[2]
+
 all_readIDs = set()
 
 # The code below is written to only ever read the first row:
