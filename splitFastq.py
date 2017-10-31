@@ -1,6 +1,8 @@
 #!/usr/bin/python
 
-# to Split an Illumina Reverse Read fasta by Header Name
+# to Split an Illumina Reads fastq by Header Name
+# Make sure you change R1 to R2 if you are splitting reverse reads
+# please see line 27
 # usage: python split_fast.py inputfile.fastq
 
 import sys
